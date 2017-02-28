@@ -38,6 +38,7 @@
     <link rel="stylesheet" type="text/css" href="/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="/css/contactus.css">
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link href="css/thumbnail-gallery.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/defcss1.css">
     <link rel="stylesheet" type="text/css" href="/css/card.css">
@@ -561,9 +562,79 @@ class="fa events3dots"></i>
                 <h2 class="navh2s">Gallery</h2>
                 <p>A sneak peek into some of our stunning events and workshops!</p>
             </header>
-              {% for anImage in image %}
+            <!---  {% for anImage in image %}
                 <div class="photo-wrapper"> <img src= {{ anImage }}  height=10% width=10%> </div>
-              {% endfor %}
+              {% endfor %} -->
+              <div class="container">
+
+        <div class="row">
+          <center>
+            {% for anImage in image %}
+            <div class="col-lg-4 col-md-4 col-xs-12 thumb">
+                <a class="thumbnail" style="border:0;">
+                    <img class="img-responsive" style="height:200px; width:auto;" src= {{ anImage }} alt="">
+                </a>
+                </div>
+             {% endfor %}
+           </center>
+           <!--
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                </a>
+            </div> -->
+        </div>
+
                 <!--<div class="photo-wrapper"> <img src= {{ image[1] }} alt="ACM VIT"> </div>
                 <div class="photo-wrapper large"> <img src={{ image[2] }} alt="ACM VIT"> </div>
 
@@ -614,14 +685,10 @@ fa-2x"
 aria-hidden="true"></i></a>
                 </li>
             </ul>
-            <a href="http://www.nisb.in"><img src="/images/ourlogo2.png" class="bottomlogo pull-left" id="bottomlogo1" alt="NIE
-IEEE
-Student
-Branch">
-            </a>
-            <a href="http://www.vit.ac.in" target="_blank"><img src="/images/vitlogo.png" class="bottomlogo pull-right"
+
+        <!--    <a href="http://www.nisb.in" target="_blank"><img src="https://mridulganga.github.io/nisb-cdn/img/logos/nisb.jpg" class="bottomlogo pull-right"
 id="bottomlogo2" alt="NISB">
-            </a>
+            </a>-->
         </footer>
     </div>
     <script>
@@ -655,7 +722,7 @@ id="bottomlogo2" alt="NISB">
     <script src="/js/jquery.particleground.min.js"></script>
     <script src="/js/demo.js"></script>
     <script src="/js/myjs.js"></script>
-    <script>
+  <!---  <script>
         (function(i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
             i[r] = i[r] || function() {
@@ -670,7 +737,7 @@ id="bottomlogo2" alt="NISB">
 
         ga('create', 'UA-81239297-1', 'auto');
         ga('send', 'pageview');
-    </script>
+    </script> --->
 </body>
 
 </html>
