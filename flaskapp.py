@@ -81,6 +81,10 @@ def hello_world():
     return render_template('index.html', event=events["data"], image=image)
 
 
+'''
+    There is this thing called multilined comments
+    Its not that bad really
+'''
 #@app.route('/contact', methods=['GET', 'POST'])
 #def contact():
 #  name = request.form['name']
